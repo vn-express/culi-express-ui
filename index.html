@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" >
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/6eBVmDIQNXsUd06jK9sRRdUEHsp4oiI7jwFFZq4ccFpY3Jc1nAsRMv0pnH__mYYExak" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CULI-EXPRESS</title>
+</head>
+<style>
+
+</style>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">CULI-EXPRESS</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Trang chủ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Thời sự</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Góc nhìn</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sức khỏe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hỗ trợ</a>
+              </li>
+            </ul>
+            <ul class="d-flex navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="./view/login.html">Đăng nhập</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./view/register.html">Đăng ký</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- header -->
+  
+
+      <!-- content -->
+      <!-- <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Category List</h2>
+  </div>
+  <div class="panel-body">
+    <table id="example" class="table table-striped table-bordered table-sm row-border hover" cellspacing="0" width="100%">
+
+      <thead>
+        <tr>
+          <th >Id</th>
+          <th >Title</th>
+          <th >Slug</th>
+        </tr>
+      </thead>
+      <tbody>
+ ------------------       Lấy dữ liệu từ category ------------------------------------------------
+        <tr *ngFor="let i of data">
+          <td>{{i.categoryId}}</td>
+          <td>{{i.title}}</td>
+          <td>{{i.slug}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div> -->
+
+<div class="container my-5">
+    <div class="row" style="margin-bottom:24px">
+      <div class="col-md-8">
+        <img style="width: 100%;" src="https://i1-vnexpress.vnecdn.net/2023/10/17/anh-10-7318-1697529114.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=8j4X9BBjHTU5skhZ20ldog" alt="">
+      </div>
+      <div class="col-md-4">
+        <div class="card-body">
+          <a href="/page" text-decoration="none">
+          <h5 class="card-title">Đề nghị làm rõ cơ sở đề xuất 350.000 tỷ đồng chấn hưng văn hóa</h5>
+        </a>
+          <p class="card-text">
+              Bộ Kế hoạch và Đầu tư đề nghị làm rõ cơ sở, phương pháp xác định số tiền 350.000 tỷ đồng đề xuất đầu tư Chương trình mục tiêu quốc gia chấn hưng, phát triển văn hóa.
+  
+              Trong công văn gửi Bộ Văn hóa Thể thao và Du lịch ngày 16/10, Bộ Kế hoạch và Đầu tư cho biết các thành viên Hội đồng thẩm định Nhà nước đã cho ý kiến về dự thảo Chương trình mục tiêu quốc gia về chấn hưng, phát triển văn hóa, xây dựng con người Việt Nam giai đoạn 2025-2035.
+              
+              Bộ Kế hoạch và Đầu tư đánh giá dự thảo mới nêu một số căn cứ xác định nhu cầu vốn ngân sách trung ương mà chưa nêu cơ sở, phương pháp xác định tổng vốn đầu tư của chương trình là 350.000 tỷ đồng trong 11 năm (2025-2035). Tổng vốn đầu tư của chương trình cũng chưa được tính toán dựa trên mục tiêu, quy mô chương trình.        </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!--
+      <div sry class="col-lg-4 mb-4">
+        <div
+             class="bg-image card shadow-1-strong"
+             style="
+                    background-image: url('https://mdbootstrap.com/img/new/slides/028.jpg');
+                    "
+             >
+          <div class="card-body text-white">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#!" class="btn btn-outline-light">Button</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div
+             class="bg-image card shadow-1-strong"
+             style="
+                    background-image: url('https://mdbootstrap.com/img/new/slides/033.jpg');
+                    "
+             >
+          <div class="card-body text-white">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#!" class="btn btn-outline-light">Button</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div
+             class="bg-image card shadow-1-strong"
+             style="
+                    background-image: url('https://mdbootstrap.com/img/new/slides/033.jpg');
+                    "
+             >
+          <div class="card-body text-white">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up
+              the bulk of the card's content.
+            </p>
+            <a href="#!" class="btn btn-outline-light">Button</a>
+          </div>
+        </div>
+      </div>-->
+      <div class="col-lg-4 mb-4">
+        <div>
+             <img style="width: 100%" src="https://i1-vnexpress.vnecdn.net/2023/10/14/387520998-1712630632578716-475-3884-8646-1697275410.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=7GmswdOhWAwZ7CHYncK49Q" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Mở rộng cầu xóa 'nút thắt cổ chai' cửa ngõ phía đông TP HCM</h5>
+            <p class="card-text">
+              Cầu Ông Dầu trên quốc lộ 13, TP Thủ Đức, được xây thêm một nhánh rộng 2,5 m, giúp xóa "nút thắt cổ chai" thường xuyên kẹt xe ở cửa ngõ phía đông thành phố.          </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div>
+             <img style="width: 100%" src="https://i1-vnexpress.vnecdn.net/2023/10/17/393668461-1344127296494232-644-1807-6426-1697515191.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=kw0eYWVoLFICRnjKOl2Lcw" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Ba tỉnh miền Trung cấm biển</h5>
+            <p class="card-text">
+                Ba tỉnh miền Trung cấm biển
+                Quảng Bình, Quảng Trị và Quảng Nam cấm biển, không cho tàu thuyền ra khơi do áp thấp nhiệt đới gây mưa giông mạnh ở vùng biển miền Trung và bắc Biển Đông.            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div>
+             <img style="width: 100%" src="https://i1-thethao.vnecdn.net/2023/10/19/15474641976100-jpeg-8466-1697670500.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=PK5ki-Rc_tAVCr2poEcUtA" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Suarez có thể tái ngộ Messi ở Inter Miami từ 2024</h5>
+            <p class="card-text">
+                HLV Gerardo Martino xác nhận Inter Miami sẽ xem xét khả năng tuyển mộ tiền đạo Luis Suarez theo dạng chuyển nhượng tự do cho MLS 2024.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div>
+             <img style="width: 100%" src="https://i1-giaitri.vnecdn.net/2023/10/18/393944430-856593326017938-8497-5686-9969-1697618581.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=2Iuu4CjVsPKRjkfPAFUeKQ" alt="">
+          <div class="card-body">
+            <h5 class="card-title">
+                Britney Spears: 'Tôi từng sống như robot'</h5>
+            <p class="card-text">
+                Trong hồi ký, Britney Spears nói việc bị giám hộ biến cô thành robot, đánh mất bản thân và niềm đam mê với âm nhạc.          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div>
+             <img style="width: 100%" src="https://i1-vnexpress.vnecdn.net/2023/10/18/A-nh-NPN-3169-1697636018.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=ei-QMqIwUlIiR74OJ0BvuA" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Việt Nam lên án hành động tấn công bạo lực nhằm vào dân thường</h5>
+            <p class="card-text">
+                Người phát ngôn Bộ Ngoại giao nêu rõ Việt Nam lên án mạnh mẽ các hành động tấn công bạo lực nhằm vào dân thường, khi bình luận về căng thẳng ở Trung Đông.            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div>
+             <img style="width: 100%" src="https://i1-vnexpress.vnecdn.net/2023/10/18/namer-1-3293-1697427288-169761-2720-3177-1697615366.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=BZEgxxNEnUI0DayEuwi6Jw" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Israel chỉ định vùng nhân đạo tại Dải Gaza</h5>
+            <p class="card-text">
+                Quân đội Israel thông báo thành lập vùng nhân đạo ở tây nam Dải Gaza để làm nơi cung cấp viện trợ quốc tế cho khu vực này.            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v811/banner/chien_su_ha_is_pc_mb.jpg" alt="">
+    </div>
+  </div>
+      <!-- content -->
+
+      <!-- footer -->
+      <footer class=" text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-top border-bottom">
+          <!-- Left -->
+          <div class="container">
+            <div>
+              <span>Báo điện tử</span><span class="logo-footer">CULI-EXPRESS</span>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="container">
+          <div class="footer-mg text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="fw-bold mb-4">
+                  Báo tiếng Việt nhiều người xem nhất
+                </h6>
+                <h6 class="fw-bold mb-4">
+                  Thuộc Bộ Khoa học và Công nghệ
+                </h6>
+                <h6 class="fw-bold mb-4">
+                  Số giấy phép: 548/GP-BTTTT Ngày 24/08/2021
+                </h6>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-4 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="fw-bold mb-4">
+                  Tổng biên tập: Phạm Hiếu
+                </h6>
+                <h6 class="fw-bold mb-4">
+                  Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, Dịch Vọng, Cầu Giấy, Hà Nội
+                </h6>
+                <h6 class="fw-bold mb-4">
+                  Điện thoại: 024 7300 8899 - máy lẻ 4500
+                </h6>
+      
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="fw-bold mb-4">
+                  © 1997-2023. Toàn bộ bản quyền thuộc CULI-EXPRESS
+                </h6>
+              </div>
+              <!-- Grid column -->
+      
+      
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <!-- Copyright -->
+      </footer>
+      <!-- footer -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script></body>
+</html>

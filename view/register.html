@@ -1,0 +1,64 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="https://play-lh.googleusercontent.com/6eBVmDIQNXsUd06jK9sRRdUEHsp4oiI7jwFFZq4ccFpY3Jc1nAsRMv0pnH__mYYExak" type="image/x-icon">
+    <title>CULI-EXPRESS</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" />
+</head>
+<body>
+    <!-- Form without bootstrap -->
+    <div class="auth-wrapper">
+        <div class="auth-container">
+            <div class="auth-action-left">
+                <div class="auth-form-outer">
+                    <h2 class="auth-form-title">
+                        Tạo tài khoản
+                    </h2>
+                  
+                    <form class="login-form">
+                        <input type="text" [(ngModel)]="username"  placeholder="Enter UserName" class="auth-form-input" name="UserName" id="UserName" required>
+                        <input type="text" [(ngModel)]="email" placeholder="Enter Email" class="auth-form-input" name="email" id="email" required>
+                        <div class="input-icon">
+                            <input type="password" [(ngModel)]="psw"  placeholder="Enter Password" name="psw" class="auth-form-input" id="psw" minlength="6" required>
+                            <i class="fa fa-eye show-password"></i>
+                        </div>
+                        <div class="input-icon">
+                            <input type="password" [(ngModel)]="password"  placeholder="Repeat Password" name="password" class="auth-form-input" id="password" minlength="6" required>
+                            <i class="fa fa-eye show-password"></i>
+                        </div>
+                        <label class="btn active">
+                            <input type="checkbox" name='email1' checked>
+                            <i class="fa fa-square-o"></i><i class="fa fa-check-square-o"></i>
+                            <span> I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</span>
+                        </label>
+                        <div class="footer-action">
+                            <button type="submit" class="btn btn-outline-primary" style="width : 10em;" (click)="register()">Sign Up</button>
+                            <a href="login" class="auth-btn-direct">Sign In</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="auth-action-right">
+              <h2 class="auth-form-title">
+                Tạo tài khoản với
+            </h2>
+              <div class="auth-external-list">
+                <ul class="list-social-media">
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/common.js"></script>
+</body>
+</html>
